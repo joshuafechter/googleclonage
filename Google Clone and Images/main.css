@@ -1,0 +1,229 @@
+/**************CSS Reset***************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html, body{
+    height: 100%;
+}
+html, body, #main , footer{
+    width: 100%;
+}
+#viewport {
+    height: 100%;
+    min-height: 500px;
+    min-width: 980px;
+    margin-bottom: -40px;
+}
+ul, #searchfield, .searchbutton {
+    font-family: Arial, Sans-serif;
+    line-height: 27px;
+}
+a {
+    text-decoration: none;
+    color: #404051;
+}
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+ul {
+    display: inline;
+    font-size: 13px;
+    text-align: right;
+    list-style: none;
+}
+    ul li{
+        display: inline-block;
+}
+.searchbutton, footer {
+    background-color: #F2F2F2;
+}
+/*************Navbar************/
+nav{
+    padding-top: 5px;
+}
+    nav ul {
+        float: right;
+        padding: 0 25px 0 0;
+    }
+    nav ul li{
+        padding: 0 5.5px;
+    }
+.tilelogo{
+    position: relative;
+    bottom: -10px;
+}
+.tilelogo span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('applogos.png');
+    background-repeat: no-repeat;
+    background-position: -431px -242px;
+    opacity: .55;
+    cursor: default;
+    margin: auto;
+}
+.tilelogo span:hover{
+    opacity:1;
+}
+#signincontainer {
+    cursor: default;
+}
+#signin {
+    color: #fff;
+    font-weight: bold;
+    background: #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background: linear-gradient(top,#4387fd,#4683ea);
+    cursor: default;
+    padding: 6px 12px;
+    border: 1px solid #4683ec;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+#signin:hover{
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+/***Main***/
+.main {
+    clear: both;
+    text-align: center;
+}
+#googlelogo{
+    margin: 0 auto;
+    padding: 148px 0 22px 0;
+    display: block;
+    width: 269px;
+}
+form {
+    height: 120px;
+}
+input {
+    border: 1px solid #d6d6d6;
+    line-height:normal;
+}
+#searchcontainer {
+    width: 600px;
+    height: 30px;
+    margin: auto;
+    position: relative;
+    display: block; 
+}
+#searchfield {
+    width: 524px;
+    height: 36px;
+    margin-top: 1px;
+    padding: 0 37px 0 9px;
+    line-height: 1.8;
+}
+#searchfield:hover{
+    border-color: #B2B2B2;
+}
+#searchfield:focus{
+    border: 1px solid #4683E7;
+    outline: none;
+}
+#voicelogo {
+    width: 19px;
+    height: 25px;
+    position: absolute;
+    right: 40px;
+    bottom: 3px;
+    opacity: 0.6;
+    cursor: default;
+}
+#voicelogo:hover {
+    opacity: 0.8;
+}
+#buttoncontainer {
+    margin: 0 auto;
+    width: 600px;
+}
+.searchbutton {
+    font-weight: bold; 
+    font-size: 11px;
+    margin: 17px 6px;
+    padding: 0 8px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    color: #4C4C4C;
+}
+.searchbutton:hover {
+    color: #222;
+    border-color: #c6c6c6;
+    box-shadow: 0 1px 0 #DADADA;
+    -webkit-box-shadow: 0 1px 0 #DADADA;
+}
+/***Footer***/
+footer  {
+    border-top: 1px solid #d6d6d6;
+    min-width: 980px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    height: 40px;
+
+}
+#footerleft, #footerright{
+    line-height: 40px;
+}
+#footerleft{
+    float: left;
+    margin: 0 0 0 30px;
+}
+#footerright{
+    float: right;
+    margin: 0 3px 0 0;
+}
+#footerleft li a, #footerright li a {
+    color: #666666;
+    padding: 0 27px 0 0;
+}
